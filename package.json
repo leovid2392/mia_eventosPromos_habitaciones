@@ -1,6 +1,6 @@
 {
 	"name": "menu_mia_eventos_app",
-	"homepage": "https://miatulum.com/qr_menu_eventos",
+	"homepage": "https://miatulum.com/qr_habitaciones",
 	"version": "0.1.0",
 	"private": true,
 	"dependencies": {
