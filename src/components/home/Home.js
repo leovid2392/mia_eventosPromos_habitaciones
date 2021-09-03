@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from "react";
 
-import logo_miaBySelina from "../../assets/logo_mia_by_selina.png";
+// import logo_miaBySelina from "../../assets/logo_mia_by_selina.png";
+import logo_miaBySelina from "../../assets/logo2.jpg";
 
 import data from "../../data";
 
 import { FiChevronLeft } from "react-icons/fi";
 import { FiChevronRight } from "react-icons/fi";
+import { FaChevronRight } from "react-icons/fa";
+import { FaChevronLeft } from "react-icons/fa";
 
 function Home({ showHome, setShowHome }) {
 	const [events, setEvents] = useState(data);
@@ -54,9 +57,14 @@ function Home({ showHome, setShowHome }) {
 					/>
 				</figure>
 			</header>
-			<button className='home_menuBtn' onClick={handleMenu}>
-				menu
-			</button>
+			<section>
+				
+				<button className='home_menuBtn' onClick={handleMenu}>
+				
+					Eventos
+				</button>
+
+			</section>
 			<section className='slider'>
 				{events.map((event, eventIndex) => {
 					const { id, url, title, image } = event;
@@ -77,20 +85,42 @@ function Home({ showHome, setShowHome }) {
 							<figure className='slider_imgContainer'>
 								<a className='slider_link' href={url} target='_blank'>
 									<img className='slider_img' src={image} alt={title} />
-									<div className='slider_buyText'>
+									{/* <div className='slider_buyText'>
 										<h5>click me to buy</h5>
-									</div>
+									</div> */}
 								</a>
 							</figure>
+								<a href={url} target='_blank'>
+									<button className='slider_butBtn'>
+										<h5>COMPRAR</h5>
+									</button>
+								</a>
+
+							
+							{/* <div className='slider_buyText'>
+								<button className='slider_prevBtn' onClick={handlePrevBtn}>
+									<FaChevronLeft />
+								</button>
+								<a href={url} target='_blank'>
+									<button className='slider_butBtn'>
+										<h5>COMPRAR</h5>
+
+									</button>
+
+								</a>
+								<button className='slider_nextBtn' onClick={handleNextBtn}>
+									<FaChevronRight />
+								</button>
+							</div> */}
 						</article>
 					);
 				})}
-				{/* <button className='slider_prevBtn' onClick={handlePrevBtn}>
-					<FiChevronLeft />
+				<button className='slider_prevBtn' onClick={handlePrevBtn}>
+					<FaChevronLeft />
 				</button>
 				<button className='slider_nextBtn' onClick={handleNextBtn}>
-					<FiChevronRight />
-				</button> */}
+					<FaChevronRight />
+				</button>
 			</section>
 		</div>
 	);
