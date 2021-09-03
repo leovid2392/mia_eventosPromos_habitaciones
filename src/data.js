@@ -8,31 +8,31 @@ import september_17 from "./assets/slider/september_17.jpeg";
 const sliderData = [
 	{
 		id: 1,
-		url: "https://www.ticketfairy.com/event/francesca-lombardo-28aug2021/?pk=cd0c2ff489c65a3eb7f1836cfaefb35f5a68b0d75c1ddb8b72c3add29d138f8f",
+		url: "https://www.ticketfairy.com/event/david-penn-5sep2021/",
 		title: "august 28, especial dinner with francesca lombardo",
 		image: september_05,
 	},
 	{
 		id: 2,
-		url: "https://www.ticketfairy.com/event/francesca-lombardo-28aug2021/?pk=cd0c2ff489c65a3eb7f1836cfaefb35f5a68b0d75c1ddb8b72c3add29d138f8f",
+		url: "https://www.ticketfairy.com/event/matthias-meyer-11sep2021/",
 		title: "august 28, especial dinner with francesca lombardo",
 		image: september_10,
 	},
 	{
 		id: 3,
-		url: "https://www.ticketfairy.com/event/francesca-lombardo-28aug2021/?pk=cd0c2ff489c65a3eb7f1836cfaefb35f5a68b0d75c1ddb8b72c3add29d138f8f",
+		url: "https://www.ticketfairy.com/event/marino-canal-12sep2021/",
 		title: "august 28, especial dinner with francesca lombardo",
 		image: september_12,
 	},
 	{
 		id: 4,
-		url: "https://www.ticketfairy.com/event/francesca-lombardo-28aug2021/?pk=cd0c2ff489c65a3eb7f1836cfaefb35f5a68b0d75c1ddb8b72c3add29d138f8f",
+		url: "https://www.ticketfairy.com/event/hunter-game-16sep2021/",
 		title: "august 28, especial dinner with francesca lombardo",
 		image: september_16,
 	},
 	{
 		id: 5,
-		url: "https://www.ticketfairy.com/event/francesca-lombardo-28aug2021/?pk=cd0c2ff489c65a3eb7f1836cfaefb35f5a68b0d75c1ddb8b72c3add29d138f8f",
+		url: "https://www.ticketfairy.com/event/nicole-moudaber-17sep2021/",
 		title: "august 28, especial dinner with francesca lombardo",
 		image: september_17,
 	},

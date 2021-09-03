@@ -5,14 +5,13 @@ import logo_miaBySelina from "../../assets/logo2.jpg";
 
 import data from "../../data";
 
-import { FiChevronLeft } from "react-icons/fi";
-import { FiChevronRight } from "react-icons/fi";
 import { FaChevronRight } from "react-icons/fa";
 import { FaChevronLeft } from "react-icons/fa";
 
 function Home({ showHome, setShowHome }) {
 	const [events, setEvents] = useState(data);
 	const [index, setIndex] = useState(0);
+	const [english, setEnglish] = useState(false)
 
 	useEffect(() => {
 		const lastIndex = events.length - 1;
@@ -24,20 +23,21 @@ function Home({ showHome, setShowHome }) {
 		}
 	}, [index, events]);
 
-	// useEffect(() => {
-	// 	let slider = setTimeout(() => {
-	// 		setIndex(index + 1);
-	// 	}, 4000);
-	// 	return () => {
-	// 		clearInterval(slider);
-	// 	};
-	// }, [index]);
-
-	const handleMenu = () => {
-		if (showHome) {
-			setShowHome(false);
+	useEffect(() => {
+		let slider = setTimeout(() => {
+			setIndex(index + 1);
+		}, 4000);
+		return () => {
+			clearInterval(slider);
+		};
+	}, [index]);
+	const handleLanguage = () => {
+		if(english) {
+			setEnglish(false)
+		} else {
+			setEnglish(true)
 		}
-	};
+	}
 
 	const handlePrevBtn = () => {
 		setIndex(index - 1);
@@ -46,6 +46,7 @@ function Home({ showHome, setShowHome }) {
 	const handleNextBtn = () => {
 		setIndex(index + 1);
 	};
+
 	return (
 		<div className='App'>
 			<header className='home_header'>
@@ -56,15 +57,10 @@ function Home({ showHome, setShowHome }) {
 						alt='mia by selina'
 					/>
 				</figure>
-			</header>
-			<section>
-				
-				<button className='home_menuBtn' onClick={handleMenu}>
-				
-					Eventos
+				<button className='languageBtn' onClick={handleLanguage}>
+					{english? `español`: `english`}
 				</button>
-
-			</section>
+			</header>
 			<section className='slider'>
 				{events.map((event, eventIndex) => {
 					const { id, url, title, image } = event;
@@ -82,6 +78,13 @@ function Home({ showHome, setShowHome }) {
 
 					return (
 						<article className={position} key={id}>
+								<a href={url} target='_blank'>
+									<button className='slider_butBtn'>
+										<h5>
+											{english? `Buy tickets`: `Compra tus boletos`}
+										</h5>
+									</button>
+								</a>
 							<figure className='slider_imgContainer'>
 								<a className='slider_link' href={url} target='_blank'>
 									<img className='slider_img' src={image} alt={title} />
@@ -90,11 +93,6 @@ function Home({ showHome, setShowHome }) {
 									</div> */}
 								</a>
 							</figure>
-								<a href={url} target='_blank'>
-									<button className='slider_butBtn'>
-										<h5>COMPRAR</h5>
-									</button>
-								</a>
 
 							
 							{/* <div className='slider_buyText'>
@@ -121,6 +119,14 @@ function Home({ showHome, setShowHome }) {
 				<button className='slider_nextBtn' onClick={handleNextBtn}>
 					<FaChevronRight />
 				</button>
+			</section>
+			<section>
+				
+				<button className='home_menuBtn'>
+				
+					{english? `Events`: `Eventos`}
+				</button>
+
 			</section>
 		</div>
 	);

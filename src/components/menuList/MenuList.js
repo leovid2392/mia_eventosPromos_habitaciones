@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 import NavBar from "../navBar/NavBar";
-import Drinks from "../drinks/Drinks";
+// import Drinks from "../drinks/Drinks";
 import Food from "../food/Food";
 import Pizza from "../pizza/Pizza";
 
@@ -62,11 +62,11 @@ function MenuList({ showHome, setShowHome }) {
 					setDrinks={setDrinks}
 					menu='Drinks'
 				/>
-				<Drinks
+				{/* <Drinks
 					img1={drinks1}
 					img2={drinks2}
 					legalsText='All prices are in mexican pesos and include 16% TAX FEE'
-				/>
+				/> */}
 			</section>
 		);
 	} else if (drinks) {
@@ -79,11 +79,11 @@ function MenuList({ showHome, setShowHome }) {
 					setDrinks={setDrinks}
 					menu='Bebidas'
 				/>
-				<Drinks
+				{/* <Drinks
 					img1={drinks1}
 					img2={drinks2}
 					legalsText='Los precios son en pesos mexicanos e incluyen 16% de IVA'
-				/>
+				/> */}
 			</section>
 		);
 	}

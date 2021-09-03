@@ -34,9 +34,10 @@ button {
 
 /* <<<<<<<<  HOME HEADER   >>>>>>>>  */
 .home_header {
-	/* width: 300px; */
+	width: 300px;
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
+	margin: 10px 0;
 }
 
 .home_logoContainer {
@@ -48,14 +49,23 @@ button {
 	width: 100%;
 	margin-bottom: 15px;
 }
+.languageBtn{
+	border: none;
+	background: transparent;
+	font-weight: 500;
+	font-size:16px;
+	color: #b3b3b3;
+	letter-spacing: 2px;
+}
 
 /* <<<<<<<<  HOME HEADER   >>>>>>>>  */
 
 /* <<<<<<<<  HOME MENU BUTTON  >>>>>>>>  */
 .home_menuBtn {
 	margin-bottom: 10px;
-	font-size: 16px;
-	letter-spacing: 2px;
+	font-size: 20px;
+	font-weight: 600;
+	letter-spacing: 4px;
 	border-radius: 30px;
 	border-style: none;
 	/* height: 30px; */
@@ -95,8 +105,9 @@ button {
 	border-radius: 20px;
 	overflow: hidden;
 	box-shadow: 0px 0px 10px #000000d4;
-	margin: 10px 0;
-	margin-bottom: 15px;
+	margin-top:30px;
+	/* margin: 10px 0; */
+	/* margin-bottom: 15px; */
 }
 
 .slider_link {
@@ -134,6 +145,8 @@ button {
 	box-shadow: 0px 5px 10px #00000099;
 	border:none;
 	background: transparent;
+	font-size: 16px;
+	margin-top: 5px;
 }
 
 .slider article.activeSlide {
@@ -161,8 +174,8 @@ button {
 .slider_prevBtn,
 .slider_nextBtn {
 	position: absolute;
-	bottom: 20px;
-	/* top: 250px; */
+	/* bottom: 20px; */
+	top: -3px;
 
 	/* background: #ffffff8c; */
 	background: transparent;
