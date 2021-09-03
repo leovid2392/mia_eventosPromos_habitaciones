@@ -1,11 +1,10 @@
 /* <<<<<<<<  GENERAL TAGS   >>>>>>>>  */
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600;700&display=swap");
 
 body {
-	font-family: 'Montserrat', sans-serif;
+	font-family: "Montserrat", sans-serif;
 }
-
 
 figure {
 	margin: 0;
@@ -17,7 +16,7 @@ h5 {
 
 button {
 	cursor: pointer;
-	font-family: 'Montserrat', sans-serif;
+	font-family: "Montserrat", sans-serif;
 }
 
 /* <<<<<<<<  GENERAL TAGS   >>>>>>>>  */
@@ -49,11 +48,11 @@ button {
 	width: 100%;
 	margin-bottom: 15px;
 }
-.languageBtn{
+.languageBtn {
 	border: none;
 	background: transparent;
 	font-weight: 500;
-	font-size:16px;
+	font-size: 16px;
 	color: #b3b3b3;
 	letter-spacing: 2px;
 }
@@ -70,7 +69,7 @@ button {
 	border-style: none;
 	/* height: 30px; */
 	/* width: 300px; */
-	padding:10px 50px ;
+	padding: 10px 50px;
 	background: #7c9c66;
 	color: white;
 }
@@ -84,7 +83,7 @@ button {
 	justify-content: center;
 	position: relative;
 	width: 320px;
-	height: 620px;
+	height: 650px;
 	overflow: hidden;
 	border-radius: 20px;
 }
@@ -105,7 +104,9 @@ button {
 	border-radius: 20px;
 	overflow: hidden;
 	box-shadow: 0px 0px 10px #000000d4;
-	margin-top:30px;
+	margin-top: 50px;
+	display: flex;
+	justify-content: center;
 	/* margin: 10px 0; */
 	/* margin-bottom: 15px; */
 }
@@ -134,25 +135,32 @@ button {
 	display: grid;
 	place-items: center;
 	border-radius: 10px;
-	display:flex;
+	display: flex;
 	justify-content: space-between;
-	
 }
 .slider_butBtn {
 	padding: 10px 20px;
 	color: #728a22;
 	border-radius: 20px;
 	box-shadow: 0px 5px 10px #00000099;
-	border:none;
+	border: none;
 	background: transparent;
 	font-size: 16px;
 	margin-top: 5px;
+}
+.eventDate {
+	position: absolute;
+	/* bottom: 20px; */
+	top: 35px;
+	color: #728a22;
+	font-size: 20px;
+	font-weight: 300;
 }
 
 .slider article.activeSlide {
 	opacity: 1;
 	transform: translateX(0);
-	display:flex;
+	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
